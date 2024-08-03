@@ -1,0 +1,68 @@
+body {
+    font-family: Xavier Oswald;
+    margin: 0;
+    padding: 0;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    position: relative;
+    height: 20vh;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.container > div {
+   flex: 1 1 calc(25% - 20px); 
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: center;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+h3, h5 {
+    margin: 5px 0;
+}
+h3{
+    color:#1E0E62 ;  
+}
+
+h5 {
+    color: #15143966;
+
+}
+
+
+@media (max-width: 768px) {
+    .container > div {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .heading-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container > div {
+        flex: 1 1 100%;
+    }
+
+    .heading-container {
+        padding: 5px;
+    }
+}
